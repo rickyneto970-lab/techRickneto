@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TechRepair | Reparação de Computadores</title>
+<meta name="description" content="TechRepair — reparação de computadores com qualidade e acompanhamento online do seu pedido.">
+<meta name="author" content="Rick Valter Raimundo Neto">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TechRepair">
+<meta property="og:title" content="TechRepair | Reparação de Computadores">
+<meta property="og:description" content="TechRepair — reparação de computadores com qualidade e acompanhamento online do seu pedido.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TechRepair | Reparação de Computadores">
+<meta name="twitter:description" content="TechRepair — reparação de computadores com qualidade e acompanhamento online do seu pedido.">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--tx:#14202e;--mut:#5b6b7d;--pri:#1f6feb;--pri2:#0b4fb8;--bd:#dbe3ec;--ok:#1a7f4b;--warn:#b7791f;--bad:#c53030;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141b;--card:#161f29;--tx:#e8eef5;--mut:#92a3b5;--pri:#4c8dff;--pri2:#79a8ff;--bd:#27333f;--ok:#4cc38a;--warn:#e0a84a;--bad:#f07178}}
+:root[data-theme="dark"]{--bg:#0e141b;--card:#161f29;--tx:#e8eef5;--mut:#92a3b5;--pri:#4c8dff;--pri2:#79a8ff;--bd:#27333f;--ok:#4cc38a;--warn:#e0a84a;--bad:#f07178}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--bd);z-index:5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:10}
+.bar{max-width:980px;margin:auto;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;color:var(--pri)}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav button{background:none;border:0;color:var(--mut);padding:8px 12px;border-radius:8px;font:inherit;cursor:pointer}
+nav button.on,nav button:hover{background:var(--bg);color:var(--pri)}
+main{max-width:980px;margin:auto;padding:20px 16px 48px}
+.hero{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;border-radius:16px;padding:36px 24px}
+.hero h1{margin:0 0 8px;font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.2}
+.hero p{margin:0 0 18px;max-width:560px;opacity:.95}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.ht{flex:1 1 300px}.hero>svg{flex:0 1 240px;width:240px;max-width:100%;height:auto;margin:auto}
+.gal figure{margin:0}.gal svg{width:100%;height:auto;background:var(--card);border:1px solid var(--bd);border-radius:14px;display:block}.gal figcaption{color:var(--mut);font-size:.9rem;margin-top:6px}
+.btn{display:inline-block;background:var(--pri);color:#fff;border:0;padding:11px 18px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer}
+.hero .btn{background:#fff;color:#0b4fb8}
+.btn.sec{background:var(--bg);color:var(--tx);border:1px solid var(--bd)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.card h3{margin:6px 0}.card p{margin:0;color:var(--mut);font-size:.95rem}
+.ico{font-size:1.8rem}.price{margin-top:10px;font-weight:700;color:var(--pri)}
+h2{margin:6px 0 4px}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:.92rem}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+.row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.msg{margin-top:14px;padding:12px;border-radius:10px;background:var(--bg);border:1px solid var(--bd)}
+.tag{display:inline-block;padding:2px 10px;border-radius:99px;font-size:.8rem;font-weight:700;border:1px solid currentColor}
+.s0{color:var(--warn)}.s1{color:var(--pri)}.s2{color:var(--ok)}.s3{color:var(--bad)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--bd);font-size:.9rem;vertical-align:top}
+th{color:var(--mut)}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin:14px 0}
+.stats b{display:block;font-size:1.6rem}
+.hide{display:none}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:20px 16px}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<div class="logo">🖥️ TechRepair</div>
+<nav id="nav">
+<button data-v="inicio" class="on">Início</button>
+<button data-v="servicos">Serviços</button>
+<button data-v="pedido">Pedir reparação</button>
+<button data-v="estado">Acompanhar</button>
+<button data-v="gestao">Gestão</button>
+</nav></div></header>
+
+<main>
+<section id="v-inicio">
+<div class="hero"><div class="ht">
+<small style="display:block;margin-bottom:8px;font-weight:600;opacity:.9">Por Rick Valter Raimundo Neto</small>
+<h1>O seu computador de volta ao melhor desempenho</h1>
+<p>Diagnóstico gratuito, reparação rápida e acompanhamento online do seu equipamento, do pedido à entrega.</p>
+<button class="btn" data-go="pedido">Pedir reparação</button>
+</div>
+<svg viewBox="0 0 240 180" role="img" aria-label="Portátil em reparação"><rect x="40" y="20" width="160" height="104" rx="8" fill="#fff" fill-opacity=".18" stroke="#fff" stroke-width="4"/><rect x="52" y="32" width="136" height="80" rx="4" fill="#0b2f6b" fill-opacity=".55"/><path d="M96 74l16 16 34-34" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 140h200l-14 18H34z" fill="#fff" fill-opacity=".3" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><circle cx="200" cy="30" r="22" fill="#fff"/><path d="M192 38l16-16m-4-6a8 8 0 0 1 8 8" stroke="#0b4fb8" stroke-width="5" stroke-linecap="round" fill="none"/></svg>
+</div>
+<div class="grid">
+<div class="card"><div class="ico">⚡</div><h3>Rápido</h3><p>A maioria das reparações fica concluída em 24 a 48 horas.</p></div>
+<div class="card"><div class="ico">🔒</div><h3>Seguro</h3><p>Os seus dados são tratados com confidencialidade.</p></div>
+<div class="card"><div class="ico">📍</div><h3>Acompanhamento</h3><p>Consulte o estado da reparação com o seu código.</p></div>
+</div>
+<h2 style="margin-top:28px">O nosso trabalho</h2>
+<div class="grid gal">
+<figure><svg viewBox="0 0 300 200" role="img" aria-label="Portátil aberto"><rect x="60" y="28" width="180" height="112" rx="8" style="fill:var(--bg);stroke:var(--pri);stroke-width:5"/><rect x="72" y="40" width="156" height="88" rx="4" style="fill:var(--pri);opacity:.18"/><path d="M96 70h60M96 88h90M96 106h44" style="stroke:var(--pri);stroke-width:6;stroke-linecap:round"/><path d="M36 152h228l-16 20H52z" style="fill:var(--bg);stroke:var(--pri);stroke-width:5;stroke-linejoin:round"/></svg><figcaption>Portáteis e ultrabooks</figcaption></figure>
+<figure><svg viewBox="0 0 300 200" role="img" aria-label="Computador de secretária"><rect x="92" y="20" width="116" height="160" rx="10" style="fill:var(--bg);stroke:var(--pri);stroke-width:5"/><circle cx="150" cy="72" r="28" style="fill:none;stroke:var(--pri);stroke-width:5"/><path d="M150 72l0-20M150 72l17 10M150 72l-17 10" style="stroke:var(--pri);stroke-width:5;stroke-linecap:round"/><circle cx="150" cy="132" r="14" style="fill:none;stroke:var(--ok);stroke-width:5"/><rect x="112" y="160" width="76" height="8" rx="4" style="fill:var(--pri);opacity:.4"/></svg><figcaption>Computadores de secretária</figcaption></figure>
+<figure><svg viewBox="0 0 300 200" role="img" aria-label="Placa e processador"><rect x="40" y="24" width="220" height="152" rx="10" style="fill:var(--bg);stroke:var(--ok);stroke-width:5"/><rect x="112" y="62" width="76" height="76" rx="6" style="fill:var(--ok);opacity:.22;stroke:var(--ok);stroke-width:5"/><path d="M60 60h36v20h16M60 100h52M60 140h36v-12h16M240 60h-36v20h-16M240 100h-52M240 140h-36v-12h-16" style="fill:none;stroke:var(--ok);stroke-width:4;stroke-linecap:round;stroke-linejoin:round"/></svg><figcaption>Reparação de componentes</figcaption></figure>
+</div>
+</section>
+
+<section id="v-servicos" class="hide">
+<h2>Os nossos serviços</h2>
+<div class="grid" id="lista-serv"></div>
+</section>
+
+<section id="v-pedido" class="hide">
+<h2>Pedir reparação</h2>
+<form id="f-pedido" class="card" autocomplete="off">
+<div class="row">
+<div><label for="nome">Nome</label><input id="nome" required></div>
+<div><label for="tel">Telefone</label><input id="tel" type="tel" required></div>
+</div>
+<div class="row">
+<div><label for="email">E-mail</label><input id="email" type="email"></div>
+<div><label for="serv">Serviço</label><select id="serv"></select></div>
+</div>
+<div class="row">
+<div><label for="equip">Equipamento</label><input id="equip" placeholder="Ex.: Portátil HP 15" required></div>
+</div>
+<label for="desc">Descrição do problema</label>
+<textarea id="desc" rows="4" required></textarea>
+<p><button class="btn" type="submit">Enviar pedido</button></p>
+<div id="ok" class="msg hide"></div>
+</form>
+</section>
+
+<section id="v-estado" class="hide">
+<h2>Acompanhar reparação</h2>
+<div class="card">
+<label for="cod">Código do pedido</label>
+<input id="cod" placeholder="Ex.: TR-1001">
+<p><button class="btn" id="b-cod">Consultar</button></p>
+<div id="res" class="msg hide"></div>
+</div>
+</section>
+
+<section id="v-gestao" class="hide">
+<h2>Gestão</h2>
+<div id="login" class="card">
+<label for="pin">PIN de acesso</label>
+<input id="pin" type="password" inputmode="numeric" placeholder="Demo: 1234">
+<p><button class="btn" id="b-pin">Entrar</button></p>
+<div id="pin-err" class="msg hide">PIN incorreto.</div>
+</div>
+<div id="painel" class="hide">
+<div class="stats" id="stats"></div>
+<p><button class="btn sec" id="b-sair">Sair</button></p>
+<div class="card wrap"><table><thead><tr><th>Código</th><th>Cliente</th><th>Equipamento</th><th>Serviço</th><th>Estado</th><th></th></tr></thead><tbody id="tb"></tbody></table></div>
+</div>
+</section>
+</main>
+<footer>Projeto académico · Plataforma de Gestão e Divulgação de Serviços de Reparação de Computadores<br>Desenvolvido por <b>Rick Valter Raimundo Neto</b></footer>
+
+<script>
+const SERV=[
+{id:"diag",ico:"🔍",nome:"Diagnóstico",desc:"Análise completa de hardware e software.",preco:"Grátis"},
+{id:"form",ico:"💽",nome:"Formatação e SO",desc:"Instalação do sistema e programas essenciais.",preco:"desde 30 €"},
+{id:"virus",ico:"🛡️",nome:"Remoção de vírus",desc:"Limpeza de malware e proteção do sistema.",preco:"desde 25 €"},
+{id:"hw",ico:"🔧",nome:"Troca de peças",desc:"Discos SSD, memória RAM, ecrãs e baterias.",preco:"sob orçamento"},
+{id:"dados",ico:"💾",nome:"Recuperação de dados",desc:"Recuperação de ficheiros de discos danificados.",preco:"desde 50 €"},
+{id:"rede",ico:"📶",nome:"Redes e Wi‑Fi",desc:"Configuração de routers e redes domésticas.",preco:"desde 20 €"}];
+const EST=["Recebido","Em reparação","Concluído","Cancelado"];
+const $=s=>document.querySelector(s);
+let mem=[],ok=true;
+function load(){try{const r=localStorage.getItem("tr_orders");return r?JSON.parse(r):[]}catch(e){ok=false;return mem}}
+function save(o){mem=o;try{localStorage.setItem("tr_orders",JSON.stringify(o))}catch(e){ok=false}}
+let orders=load();
+if(!orders.length){orders=[{cod:"TR-1000",nome:"Ana Silva",tel:"910000000",email:"",serv:"form",equip:"Portátil Lenovo",desc:"Sistema muito lento.",estado:1,data:new Date().toISOString()}];save(orders)}
+const nomeServ=id=>(SERV.find(s=>s.id===id)||{}).nome||id;
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function ver(v){
+document.querySelectorAll("main>section").forEach(s=>s.classList.add("hide"));
+$("#v-"+v).classList.remove("hide");
+document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+if(v==="gestao")render();window.scrollTo(0,0)}
+document.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>ver(b.dataset.v));
+document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>ver(b.dataset.go));
+
+$("#lista-serv").innerHTML=SERV.map(s=>`<div class="card"><div class="ico">${s.ico}</div><h3>${s.nome}</h3><p>${s.desc}</p><div class="price">${s.preco}</div></div>`).join("");
+$("#serv").innerHTML=SERV.map(s=>`<option value="${s.id}">${s.nome}</option>`).join("");
+
+$("#f-pedido").onsubmit=e=>{e.preventDefault();
+const n=Math.max(...orders.map(o=>+o.cod.split("-")[1]),999)+1;
+const o={cod:"TR-"+n,nome:$("#nome").value.trim(),tel:$("#tel").value.trim(),email:$("#email").value.trim(),serv:$("#serv").value,equip:$("#equip").value.trim(),desc:$("#desc").value.trim(),estado:0,data:new Date().toISOString()};
+orders.push(o);save(orders);e.target.reset();
+const m=$("#ok");m.classList.remove("hide");
+m.innerHTML=`Pedido registado com sucesso. O seu código é <b>${o.cod}</b>. Guarde‑o para acompanhar a reparação.`};
+
+$("#b-cod").onclick=()=>{
+const c=$("#cod").value.trim().toUpperCase();const o=orders.find(x=>x.cod===c);const r=$("#res");r.classList.remove("hide");
+r.innerHTML=o?`<b>${o.cod}</b> · ${esc(o.equip)}<br>${nomeServ(o.serv)}<br>Estado: <span class="tag s${o.estado}">${EST[o.estado]}</span>`:"Código não encontrado."};
+
+function render(){
+const c=[0,1,2,3].map(i=>orders.filter(o=>o.estado===i).length);
+$("#stats").innerHTML=`<div class="card"><b>${orders.length}</b>Total</div>`+EST.map((e,i)=>`<div class="card"><b class="s${i}">${c[i]}</b>${e}</div>`).join("");
+$("#tb").innerHTML=orders.slice().reverse().map(o=>`<tr><td>${o.cod}</td><td>${esc(o.nome)}<br><small>${esc(o.tel)}</small></td><td>${esc(o.equip)}<br><small>${esc(o.desc)}</small></td><td>${nomeServ(o.serv)}</td>
+<td><select data-c="${o.cod}">${EST.map((e,i)=>`<option value="${i}"${i===o.estado?" selected":""}>${e}</option>`).join("")}</select></td>
+<td><button class="btn sec" data-d="${o.cod}" aria-label="Apagar">🗑️</button></td></tr>`).join("");
+document.querySelectorAll("[data-c]").forEach(s=>s.onchange=()=>{orders.find(o=>o.cod===s.dataset.c).estado=+s.value;save(orders);render()});
+document.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{if(confirm("Apagar este pedido?")){orders=orders.filter(o=>o.cod!==b.dataset.d);save(orders);render()}})}
+
+let auth=false;
+function showAuth(){$("#login").classList.toggle("hide",auth);$("#painel").classList.toggle("hide",!auth)}
+$("#b-pin").onclick=()=>{if($("#pin").value==="1234"){auth=true;$("#pin").value="";$("#pin-err").classList.add("hide");showAuth();render()}else $("#pin-err").classList.remove("hide")};
+$("#b-sair").onclick=()=>{auth=false;showAuth()};
+showAuth();
+</script>
+</body>
+</html>
